@@ -46,6 +46,22 @@ function createMap(markers){
             "<br><h3>Depth: " + circleDepth + "</h3>").addTo(myMap);
 
     });
+
+    // Add a legend
+    var legend = L.control({position: "bottomleft"});
+    legend.onAdd = function(){
+        var div = L.DomUtil.create("div", "info legend");
+        var grades = [-10, 10, 30, 50, 70, 90];
+        var labels = [];
+        for (var i = 0; i < grades.length; i++) {
+            div.innerHTML +=
+                '<i style="background:' + chooseColor(grades[i] + 1) + '"></i> ' +
+                grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+        }
+    
+        return div;
+    }
+    legend.addTo(myMap);
       
 }
 
