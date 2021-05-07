@@ -39,7 +39,8 @@ function createMap(markers){
             fillOpacity: '100%',
             fillColor: circleColor,
             radius: circleRadius,
-            weight: 0
+            weight: 1,
+            color: 'black'
         }).addTo(myMap);
 
     });
