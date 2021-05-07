@@ -14,8 +14,8 @@ d3.json(url).then(response => {
 
 function createMap(markers){
     var myMap = L.map("map-id", {
-        center: [39.8283, -98.5795],
-        zoom: 3
+        center: [50, -130],
+        zoom: 4
       });
       
       L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
