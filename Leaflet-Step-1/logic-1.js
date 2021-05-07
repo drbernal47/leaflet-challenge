@@ -33,6 +33,7 @@ function createMap(markers){
         var circleRadius = (marker.properties.mag * 30000);
         var circleColor = chooseColor(marker.geometry.coordinates[2]);
         var circleLocation = [marker.geometry.coordinates[1], marker.geometry.coordinates[0]];
+        var popUpText = marker.properties.place;
         
         // Add circle marker to map
         L.circle(circleLocation, {
@@ -41,7 +42,7 @@ function createMap(markers){
             radius: circleRadius,
             weight: 1,
             color: 'black'
-        }).addTo(myMap);
+        }).bindPopup("<h3>" + popUpText + "</h3><br><h4>Magnitude:" + circleRadius + "</h4>").addTo(myMap);
 
     });
       
