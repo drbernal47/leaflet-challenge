@@ -65,6 +65,7 @@ function createMap(markers){
       
 }
 
+
 function chooseColor(depth) {
     switch(true) {
         case (depth < 10): return '#e61919';
