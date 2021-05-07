@@ -12,7 +12,6 @@ d3.json(url).then(response => {
 });
 
 
-
 function createMap(markers){
     var myMap = L.map("map-id", {
         center: [39.8283, -98.5795],
