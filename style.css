@@ -7,8 +7,9 @@ body {
   #map-id,
   body,
   html {
-    height: 98%;
+    height: 92%;
     width: 98%;
+    margin: auto;
   }
   
   .leaflet-popup-content {
