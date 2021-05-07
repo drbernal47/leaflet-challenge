@@ -31,18 +31,19 @@ function createMap(markers){
     markers.forEach(marker => {
         // Format the size of the marker to reflect magnitude
         var circleRadius = (marker.properties.mag * 30000);
-        var circleColor = chooseColor(marker.geometry.coordinates[2]);
+        var circleDepth = marker.geometry.coordinates[2];
         var circleLocation = [marker.geometry.coordinates[1], marker.geometry.coordinates[0]];
         var popUpText = marker.properties.place;
         
         // Add circle marker to map
         L.circle(circleLocation, {
             fillOpacity: '100%',
-            fillColor: circleColor,
+            fillColor: chooseColor(circleDepth),
             radius: circleRadius,
             weight: 1,
             color: 'black'
-        }).bindPopup("<h3>" + popUpText + "</h3><br><h4>Magnitude:" + circleRadius + "</h4>").addTo(myMap);
+        }).bindPopup("<h2>" + popUpText + "</h2><br><h3>Magnitude: " + circleRadius + "</h3>" +
+            "<br><h3>Depth: " + circleDepth + "</h3>").addTo(myMap);
 
     });
       

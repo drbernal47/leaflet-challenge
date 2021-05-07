@@ -7,15 +7,15 @@ body {
   #map-id,
   body,
   html {
-    height: 95%;
-    width: 95%;
+    height: 98%;
+    width: 98%;
   }
   
   .leaflet-popup-content {
     text-align: center;
+    line-height: 20%;
   }
   
-  /* CSS from the Leaflet-Choropleth documentation */
   .legend {
     padding: 6px 8px;
     font: 12px Arial, Helvetica, sans-serif;
@@ -48,33 +48,3 @@ body {
   .legend .max {
     float: right;
   }
-  
-  h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-  
-/* CSS for the headers */
-h2 {
-  font-size: 20px;
-}
-
-
-h4 {
-  font-size: 15.5px;
-  line-height: 180%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-h5 {
-  color:Black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
-}
-
-p {
-  font-size: 12px;
-}
