@@ -1,5 +1,5 @@
 # leaflet-challenge
-This project is an assignment focused on the leaflet javascript library.
+This project is an assignment focused on the leaflet javascript library. The goal was to take earthquake data and create a map in javascript/html that would display this data visually and geographically. Earthquakes are displayed using circle markers, and their size is relative to the magnitude of the earthquake while their color is based on the depth of the earthquake.
 
 To access the project:
 1. Clone this repository to your desktop.
